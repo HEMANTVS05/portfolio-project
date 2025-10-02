@@ -33,6 +33,14 @@ body {
     line-height: 1.5;
 }
 
+.objective1 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: var(--black);
+}
+
 a {
     color: var(--steel);
     text-decoration: none;
@@ -170,10 +178,25 @@ nav li a:hover {
     box-shadow: 0 20px 40px rgba(16,24,40,0.08);
     position: relative;
     transition: transform 0.3s;
+    width: 450px; /* Increased width */
+    max-width: 100%;
+}
+
+.profile-card img.profile-pic {
+    width: 100%;
+    height: 340px; /* Increased height */
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
 }
 
 .profile-card:hover {
     transform: translateY(-5px);
+}
+
+.card .muted.small {
+    font-size: 16px;
+    color: var(--dark);
 }
 
 .profile-card img {
@@ -236,6 +259,7 @@ section {
 .section-title {
     font-size: 20px;
     margin-bottom: 12px;
+    margin-left: 5px;
     transition: transform 0.3s, color 0.3s;
 }
 
@@ -327,4 +351,62 @@ footer {
     nav ul {
         display: none;
     }
+}
+
+.publications-card {
+    min-width: 340px;
+    max-width: 100%;
+    min-height: 120px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.awards-card {
+    min-width: 340px;
+    max-width: 100%;
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.research-flex {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+.research-desc {
+    flex: 2;
+}
+.research-img {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr; /* Wider left column for text, right for image */
+    gap: 32px;
+    align-items: start;
+}
+
+.research-desc {
+    width: 100%;
+}
+
+.research-img {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 44px;
+    width: 100%;
+}
+
+.research-img img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
