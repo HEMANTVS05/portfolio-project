@@ -46,6 +46,53 @@ a {
     text-decoration: none;
 }
 
+.linkedin {
+    color: var(--steel);
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-right: 50px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.linkedin:hover {
+    color: black; /* Dark blue */
+    transform: scale(1.05);
+}
+
+.linkedin a:hover {
+    background: #e6f0ff;      /* Light blue background */
+    color: #003366;           /* Dark blue text */
+    border-radius: 16px;      /* Rounded pill effect */
+    transition: background 0.3s, color 0.3s;
+}
+
+.top{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.foredu{
+    border-bottom:1px solid #ccc;
+    padding:8px;
+}
+
+.edusame{
+    padding: 8px;
+}
+
+.hyphen{
+    text-align: center;
+}
+
+.givegap{
+    margin-bottom: 5px;
+}
+
 /* -------------------------------
    Container
 ---------------------------------*/
@@ -67,12 +114,10 @@ header {
     border-bottom: 1px solid rgba(16,24,40,0.04);
 }
 
-.nav {
+nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    padding: 12px 0;
+    align-items: center;
 }
 
 .brand {
@@ -81,7 +126,7 @@ header {
     align-items: center;
 }
 
-.brand .logo {
+.logo{
     width: 46px;
     height: 46px;
     border-radius: 10px;
@@ -93,6 +138,11 @@ header {
     font-weight: 700;
     font-size: 18px;
 }
+
+.brand{
+    margin-left: 10px;
+}
+
 
 .brand h1 {
     font-size: 16px;
@@ -410,3 +460,81 @@ footer {
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
+
+/* For the awards table only */
+#awards table, 
+#awards th, 
+#awards td {
+    border: 1px solid #ccc;
+}
+
+#awards th, 
+#awards td {
+    padding: 8px;
+}
+
+#education table, 
+#education th, 
+#education td {
+    border: 1px solid #ccc;
+}
+
+#education th, 
+#education td {
+    padding: 8px;
+}
+
+#experience table, 
+#experience th, 
+#experience td {
+    border: 1px solid #ccc;
+}
+
+#experience th, 
+#experience td {
+    padding: 8px;
+}
+
+#journals table,
+#journals th,
+#journals td{
+    border: 1px solid #ccc;
+}
+
+#journals th,
+#journals td{
+    padding: 8px;
+}
+
+#patents table,
+#patents th,
+#patents td{
+    border: 1px solid #ccc;
+}
+
+#patents th,
+#patents td{
+    padding: 8px;
+}
+
+#copyrights table,
+#copyrights th,
+#copyrights td{
+    border: 1px solid #ccc;
+}
+
+#copyrights th,
+#copyrights td{
+    padding: 8px;
+}
+
+#eventsatten table,
+#eventsatten th,
+#eventsatten td{
+    border: 1px solid #ccc;
+}
+#eventsatten th,
+#eventsatten td{
+    padding: 8px;
+}
+
