@@ -21,7 +21,7 @@ document.querySelectorAll('header nav a, a.btn').forEach(a => {
             e.preventDefault();
             const el = document.querySelector(href);
             if (el) {
-                const top = el.getBoundingClientRect().top + window.scrollY - 80;
+                const top = el.getBoundingClientRect().top + window.scrollY - 95;
                 window.scrollTo({ top, behavior: 'smooth' });
             }
         }
